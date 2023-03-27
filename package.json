@@ -1,0 +1,17 @@
+{
+  "name": "CYPRESS_GITHUB",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev" :"start-server-and-test start https://example.cypress.io cy:open",
+    "cy:open": "cypress open"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cypress": "^12.8.1"
+  }
+}
