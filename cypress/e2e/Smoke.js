@@ -77,6 +77,7 @@ export const smokeTest = () => {
   //   // cy.contains("Meet for Happy Hour")
   
     //Check People Screen
+    cy.visit('/app')
     cy.contains("Discover").click()//Go back to Discover screen from Mixer
     cy.contains("People").click()
     cy.contains("Find people by name or email").should('have.attr', 'type', 'button').click()
@@ -113,6 +114,7 @@ export const smokeTest = () => {
   
   
     //Check Support screen
+    cy.visit('/app')
     cy.contains("Support").click()
     cy.contains("Support")
     cy.contains('FAQs')
