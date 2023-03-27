@@ -1,7 +1,7 @@
 name: Run Cypress Tests
 on:
   schedule:
-    - cron: '55 21 * * *' # run the tests every day at 7:00 AM (UTC)
+    - cron: '0 22 * * *' # run the tests every day at 7:00 AM (UTC)
 
 jobs:
   cypress-tests:
