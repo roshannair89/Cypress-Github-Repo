@@ -1,4 +1,4 @@
-export const smokeTest = () => {
+export const smokeTest2 = () => {
 
     //Check Admin Smoke
     cy.visit('/admin')

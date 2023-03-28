@@ -1,4 +1,4 @@
-export const smokeTest = () => {
+export const smokeTest1 = () => {
 
     cy.visit('/app')
     // cy.contains("Yara App").click()
