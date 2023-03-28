@@ -8,7 +8,6 @@ export const smokeTest = () => {
     //cy.contains('Roshan Nair')
     cy.contains('Roshan Nair')//User profile
     
-    
     //Check Building screen
     cy.contains("Space Management")
     cy.contains('[data-testid="heading"]', 'Buildings')
