@@ -153,11 +153,11 @@ export const smokeTest2 = () => {
     cy.contains('[data-testid="filter"]', 'To')
     cy.get('#page-search').clear()//clear search
     cy.contains("Status").should('have.attr', 'type', 'button').click()//Test Filter by Status
-    cy.contains("Select feedback status").type("pen{enter}")
+    cy.contains("Select feedback status").type("res{enter}")
     cy.get('#dialog_label').should('have.text','Filter by:').click()
     cy.get('[data-testid="show-results"]').click()
-    cy.get('.sc-5ddceaf4-5').contains("Pending")
-    cy.get('.sc-5ddceaf4-5').should('not.contain','resolved')
+    cy.get('.sc-5ddceaf4-5').contains("Resolved")
+    cy.get('.sc-5ddceaf4-5').should('not.contain','Pending')
     
     
     //below code is to check all hyperlinks on the page
