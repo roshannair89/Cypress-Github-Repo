@@ -7,3 +7,4 @@ Cypress._.each(['macbook-16'], viewport => {
       smokeTest2()
     })
   })
+  
