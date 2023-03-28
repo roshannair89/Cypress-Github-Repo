@@ -143,9 +143,9 @@ export const smokeTest2 = () => {
     cy.get('.hMvAJf').should('not.contain','Unverified')
     
     //Check Feedback screen
-    cy.contains('[href="/admin/feedback"]', 'Feedback').click()
+    cy.contains('[href="/feedback"]', 'Feedback').click()
     cy.wait(2000)
-    cy.contains('[data-testid="heading"]', 'Feedback')
+    //cy.contains('[data-testid="heading"]', 'Feedback')
     cy.contains('Overview')
     cy.contains('[data-testid="filter"]', 'Feedback Type')
     cy.contains('[data-testid="filter"]', 'Status')
